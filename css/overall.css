@@ -1,0 +1,28 @@
+.center-text {
+    text-align: center;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.content-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 1000px) {
+    .content-container {
+    width:100%;
+    padding: 0;
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+    }
+}
+
+button {
+    box-shadow: none;
+    border: 0;
+    padding: 0;
+}
+
