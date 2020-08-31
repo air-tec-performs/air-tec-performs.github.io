@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Air-Tec News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+
+  <style>
+      *, body, html {
+    margin: 0;
+    padding: 0;
+    background-color:lightblue;
+    text-align: center;
+    color: white;
+    font-size: 1.25rem;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: [nav] 100px [nav-end main] calc(100% - 200px) [main-end footer] 100px [footer-end];
+    grid-template-columns: [left1] calc(calc(100% - 900px) / 2) [left-end center1] 900px [center-end right1] calc(calc(100% - 900px) / 2) [right-end];
+
+}
+
+@media screen and (max-width: 910px) {
+    .grid {
+    display: grid;
+    grid-template-rows: [nav] 100px [nav-end main] calc(100% - 200px) [main-end footer] 100px [footer-end];
+    grid-template-columns: [left1] 0px [left-end center1] 100% [center-end right1] 0px [right-end];
+
+}
+}
+
+.nav {
+    grid-column: left1 / right-end;
+    grid-row: nav / nav-end;
+    background-color: blue;
+    padding: 1rem;
+}
+.nav-item {
+    display: inline;
+    text-decoration: none;
+}
+
+.main {
+    grid-column: center1 / center-end;
+    grid-row: main / main-end;
+    background-color: rgb(1,111,211);
+    padding: 1rem;
+
+}
+
+.main .content {
+    background-color: rgba(11,80,191,.9);
+    border-radius: 1rem;
+    height: 200px;
+    margin: 50px;
+    padding: 1rem;
+
+}
+
+.footer {
+    grid-column: left1 / right-end;
+    grid-row: footer / footer-end;
+    background-color: blue;
+    padding: 1rem;
+}
+  </style>
+</head>
+<body style="    
+margin: 0;
+padding: 0;
+background-color:lightblue;
+text-align: center;
+color: white;
+font-size: 1.25rem;">
+  <div class="grid" style="
+  display: grid;
+  grid-template-rows: [nav] 100px [nav-end main] calc(100% - 200px) [main-end footer] 100px [footer-end];
+  grid-template-columns: [left1] calc(calc(100% - 900px) / 2) [left-end center1] 900px [center-end right1] calc(calc(100% - 900px) / 2) [right-end];">
+    <div class="nav" style="
+    grid-column: left1 / right-end;
+    grid-row: nav / nav-end;
+    background-color: blue;
+    padding: 1rem;">
+    </div>
+    <div class="main" style="
+    grid-column: center1 / center-end;
+    grid-row: main / main-end;
+    background-color: rgb(1,111,211);
+    padding: 1rem;"> Middle section
+      <div class="content" stlye=" background-color: rgba(11,80,191,.9);
+      border-radius: 1rem;
+      height: 200px;
+      margin: 50px;
+      padding: 1rem;"></div>
+      <div class="content" stlye=" background-color: rgba(11,80,191,.9);
+      border-radius: 1rem;
+      height: 200px;
+      margin: 50px;
+      padding: 1rem;"></div>      
+      <div class="content" stlye=" background-color: rgba(11,80,191,.9);
+      border-radius: 1rem;
+      height: 200px;
+      margin: 50px;
+      padding: 1rem;"></div>      
+      <div class="content" stlye=" background-color: rgba(11,80,191,.9);
+      border-radius: 1rem;
+      height: 200px;
+      margin: 50px;
+      padding: 1rem;"></div>
+    </div>
+    <div class="footer" style="grid-column: left1 / right-end;
+    grid-row: footer / footer-end;
+    background-color: blue;
+    padding: 1rem;">
+    Goodbye
+    </div>
+    </div>
+</body>
+</html>
