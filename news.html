@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="News Page for Air-Tec">
   <meta name="author" content="SeanLiam McCarthy">
+  <link rel="icon" href="img/airteclogo.ico">
+
 
   <title>Air-Tec News Page</title>
 
@@ -26,7 +28,7 @@
 
 </head>
 
-<body>
+<body id="top">
     <div class="title">
         <div class="title-first center-text caps">Air-Tec</div>
         <div class="title-second center-text caps"></div>
@@ -64,7 +66,7 @@
                     air circulation systems. Because of this, we may need to reexamine our air filtration process. Air-Tec has been installing the below products to help maximize
                     the safety of our clients wherever possible.
                 </p>
-                <div id="covid" class="fake-btn">Learn More</div>
+                <div id="covid" class="fake-btn">Learn More Below</div>
                 </div>
 
             <div class="image-right">
@@ -96,7 +98,7 @@
                     As a company that has been dedicated to service and performance since 1969, we care deeply about our clients and their health.
                     If you have any interest in acquiring any of these air filtration systems, please let us know. 
                 </p>
-                <div id="covid2" class="fake-btn">Learn More</div>
+                <div id="covid2" class="fake-btn">Product Information</div>
             </div>
 
             </div>
@@ -115,7 +117,7 @@
                     Air flows through the existing HVAC system until it encounters a "barrier wall" of UV energy, which inactivates harmful bacteria and germs and greatly improves indoor air quality.
                     While this concept was originally applied in the agricultural industry, it has been recently adapted to service medical, military, and commercial facilities.
                     If you would like to install Sanuvox's Bio-Wall MAX, or if you'd like more information, please contact Air-Tec.</p>
-                <div id="covid4" class="fake-btn">Learn More</div>
+                <div id="covid4" class="fake-btn">Bio-Wall Information</div>
             </div>
                
             </div>
@@ -152,7 +154,7 @@
                     It does not create anything that is not already found in the atmosphere, and instead removes harmful contaminants from the air around it.
                     Additionally, the GPS-iMOD can be installed very easily in new or existing HVAC systems, making it a convenient, cost-effective prevention method for the workplace.
                     If you are interested in having the GPS-iMOD installed, or if you would like more information, please contact Air-Tec. </p>
-                <div id="covid3" class="fake-btn">Learn More</div>
+                <div id="covid3" class="fake-btn">GPS-iMOD Information</div>
             </div>
                
             </div>
@@ -217,6 +219,11 @@
         </div>
     </div>
 
+    <div class="content-container">
+        <div class="return-btn-wrapper">
+            <button id="news" class="return-btn news">Back to Top</button>
+        </div>
+    </div>
 
   <footer class="footer">
     <div class="footer-content center-text">Copyright © Air Tec Performs 2020</div>
@@ -244,6 +251,9 @@
     };
     document.getElementById("hazmat2").onclick = function () {
         location.href = "flyer.hazmat.html";
+    };
+    document.getElementById("news").onclick = function () {
+        location.href = "news.html#top";
     };
     </script>
     <script src="js/onclick_funcs.js"></script>
